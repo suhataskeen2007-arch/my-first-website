@@ -1,6 +1,3 @@
-function showMessage() {
-    alert("Hello!");
-}
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 
