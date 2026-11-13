@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY FIRST WEBSITE</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    </nav>
+    <button id="themeButton" onclick="toggleTheme()">
+    🌙 Dark Mode
+    </button>
+
+    <section id="home">
+        <h1>Welcome to My Website</h1>
+        <h2 id="typingText"></h2>
+        <p>This is my first website.</p>
+        <h3>Search My Topics</h3>
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Type to search..."
+            onkeyup="searchTopics()"
+        >
+
+        <ul id="topicList">
+    <li onclick="showSummary('HTML')">HTML</li>
+    <li onclick="showSummary('CSS')">CSS</li>
+    <li onclick="showSummary('JavaScript')">JavaScript</li>
+    <li onclick="showSummary('Web Design')">Web Design</li>
+    <li onclick="showSummary('Responsive Website')">Responsive Website</li>
+    </ul>
+
+<div id="topicSummary"></div>
+        <img src="welcome img.jpeg" alt="My image">
+
+        <button onclick="showMessage()">Click Me</button>
+    </section>
+
+    <button id="topButton" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    Back to Top ↑
+    </button>
+<script src="script.js"></script>
+
+</body>
+</html>
